@@ -1,0 +1,13 @@
+Package: TextProcess
+Type: Package
+Title: Text Processing Pakcage
+Version: 0.1.0
+Author: Matthew Smith
+Maintainer: Matthew Smith <matt_smith.90@hotmail.co.uk>
+Description: A collection of functions for processing text data from Web of Science or Scopus
+Depends: R (>= 2.15.1)
+License: GPL-3
+Encoding: UTF-8
+Imports: stats,utils,dplyr,purrr,readxl,janitor
+LazyData: true
+RoxygenNote: 7.1.1
