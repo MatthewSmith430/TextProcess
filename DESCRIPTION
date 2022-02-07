@@ -8,6 +8,6 @@ Description: A collection of functions for processing text data from Web of Scie
 Depends: R (>= 2.15.1)
 License: GPL-3
 Encoding: UTF-8
-Imports: stats,utils,dplyr,purrr,readxl,janitor
+Imports: stats,utils,dplyr,purrr,readxl,janitor,tidyr
 LazyData: true
 RoxygenNote: 7.1.1
