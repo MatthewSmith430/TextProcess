@@ -6,7 +6,7 @@
 #' @return Dataframe
 text_replace<-function(DATA){
   
-  abstract_data<-abstract_data
+  abstract_data<-tolower(DATA$abstract_data)
   
   abstract_data<-stringr::str_replace_all(abstract_data, "organisation", "organization")
   abstract_data<-stringr::str_replace_all(abstract_data, "internationalisation", "internationalization")
@@ -14,7 +14,7 @@ text_replace<-function(DATA){
   abstract_data<-stringr::str_replace_all(abstract_data, "behavior", "behaviour")
   abstract_data<-stringr::str_replace_all(abstract_data, "labor", "labour")
   abstract_data<-stringr::str_replace_all(abstract_data, "automobile", "automotive")
-  
+  abstract_data<-stringr::str_replace_all(abstract_data, "carbon caputre storage", "carboncaputrestorage")
   abstract_data<-stringr::str_replace_all(abstract_data, "academic achievement", "academicachievement")
   abstract_data<-stringr::str_replace_all(abstract_data, "labour market", "labour market")
   abstract_data<-stringr::str_replace_all(abstract_data, "labourmarkets", "labour market")

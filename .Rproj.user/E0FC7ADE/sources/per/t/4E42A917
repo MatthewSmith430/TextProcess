@@ -1,27 +1,27 @@
 {
-    "id": "ADDA81BA",
+    "id": "4E42A917",
     "path": "C:/Users/matt_/Documents/Github/TextProcess/R/pre_clean_function.R",
     "project_path": "R/pre_clean_function.R",
     "type": "r_source",
-    "hash": "3678610278",
+    "hash": "2790371875",
     "contents": "",
     "dirty": false,
-    "created": 1644410831421.0,
+    "created": 1644415604011.0,
     "source_on_save": false,
     "relative_order": 4,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "9,103",
-        "scrollLine": "16"
+        "cursorPosition": "7,36",
+        "scrollLine": "4"
     },
     "folds": "",
-    "lastKnownWriteTime": 1644411224,
+    "lastKnownWriteTime": 1644415621,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1644411224969,
+    "last_content_update": 1644415621023,
     "read_only": false,
     "read_only_alternatives": []
 }

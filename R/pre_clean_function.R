@@ -5,7 +5,7 @@
 #' @export
 #' @return text data vector
 pre_clean<-function(DATA){
-  TEXT_DATA<-DATA$TEXT_DATA
+  TEXT_DATA<-tolower(DATA$TEXT_DATA)
   sw<-stopwords::stopwords("en", source = "snowball")
   wl<-c("and","the","our","that","table","figure","published","indicate","aims","article","indicates",#"analysis",
         #"high","system",
