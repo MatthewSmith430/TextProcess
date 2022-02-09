@@ -7,10 +7,10 @@
 text_replace(DATA)
 }
 \arguments{
-\item{DATA}{THis is a dataframe, it must have a column titled "abstract_data"}
+\item{DATA}{some text data}
 }
 \value{
-Dataframe
+Text dataframe
 }
 \description{
 This removes spaces between words that usually co-occur.

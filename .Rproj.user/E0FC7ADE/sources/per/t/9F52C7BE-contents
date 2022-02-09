@@ -1,12 +1,12 @@
 #' @title text_replace
 #'
 #' @description This removes spaces between words that usually co-occur. 
-#' @param DATA THis is a dataframe, it must have a column titled "abstract_data"
+#' @param DATA some text data 
 #' @export
-#' @return Dataframe
+#' @return Text dataframe
 text_replace<-function(DATA){
   
-  abstract_data<-tolower(DATA$abstract_data)
+  abstract_data<-tolower(DATA)
   
   abstract_data<-stringr::str_replace_all(abstract_data, "organisation", "organization")
   abstract_data<-stringr::str_replace_all(abstract_data, "internationalisation", "internationalization")
@@ -1076,7 +1076,7 @@ text_replace<-function(DATA){
   abstract_data<-stringr::str_replace_all(abstract_data, "\\bsna\\b","socialnetworkanalysis")
   abstract_data<-stringr::str_replace_all(abstract_data, "network science","networkscience")
   
-  DATA2<-dplyr::mutate(DATA,abstract_data_revised=abstract_data)
+  DATA2<-abstract_data
 
   
   

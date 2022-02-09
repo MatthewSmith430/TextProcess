@@ -4,10 +4,10 @@
 \alias{pre_clean}
 \title{pre_clean}
 \usage{
-pre_clean(DATA)
+pre_clean(TEXT_DATA)
 }
 \arguments{
-\item{DATA}{Dataframe with TEXT_DATA column}
+\item{TEXT_DATA}{some text data}
 }
 \value{
 text data vector

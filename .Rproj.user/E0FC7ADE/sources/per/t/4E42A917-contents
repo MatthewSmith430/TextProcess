@@ -1,11 +1,11 @@
 #' @title pre_clean
 #'
 #' @description Cleaning function for TEXT data - for both WOS & Scopus
-#' @param DATA Dataframe with TEXT_DATA column
+#' @param TEXT_DATA some text data
 #' @export
 #' @return text data vector
-pre_clean<-function(DATA){
-  TEXT_DATA<-tolower(DATA$TEXT_DATA)
+pre_clean<-function(TEXT_DATA){
+  TEXT_DATA<-tolower(TEXT_DATA)
   sw<-stopwords::stopwords("en", source = "snowball")
   wl<-c("and","the","our","that","table","figure","published","indicate","aims","article","indicates",#"analysis",
         #"high","system",
