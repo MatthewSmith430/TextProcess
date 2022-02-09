@@ -9,7 +9,7 @@ pre_clean<-function(TEXT_DATA){
   sw<-stopwords::stopwords("en", source = "snowball")
   wl<-c("and","the","our","that","table","figure","published","indicate","aims","article","indicates",#"analysis",
         #"high","system",
-        "results","believed",
+        "results","believed","making","various","towards","estalished","meet","best","since",
         "for","are","also","more","has","project","due","lead","take","taking","accordingly","aforementioned",
         "must","have","should","this","projects","within","area","potential","account","accounts","aftermath","afterwards",
         "with","furthermore","PhD","will","our","available","technologies","write","wrote","undertake","undertaken","agreed",
