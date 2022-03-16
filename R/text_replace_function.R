@@ -7,7 +7,7 @@
 text_replace<-function(DATA){
   
   abstract_data<-tolower(DATA)
-  
+ 
   abstract_data<-stringr::str_replace_all(abstract_data, "edinburgh napier university", "edinburghnapieruniversity")
   abstract_data<-stringr::str_replace_all(abstract_data, "sri lanka", "srilanka")
   abstract_data<-stringr::str_replace_all(abstract_data, "organisation", "organization")
@@ -1137,6 +1137,7 @@ text_replace<-function(DATA){
   abstract_data<-stringr::str_replace_all(abstract_data, "social network analysis","socialnetworkanalysis")
   abstract_data<-stringr::str_replace_all(abstract_data, "\\bsna\\b","socialnetworkanalysis")
   abstract_data<-stringr::str_replace_all(abstract_data, "network science","networkscience")
+  abstract_data<-stringr::str_replace_all(abstract_data, "credit rating","creditrating")
   
   DATA2<-abstract_data
 
