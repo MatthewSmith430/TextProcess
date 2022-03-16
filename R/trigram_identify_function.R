@@ -13,7 +13,7 @@ trigram_identify<-function(text_data,freq_bigram){
   ) 
   
   tril<-list()
-  for (i in 1:length(bi_gram)){
+  for (i in 1:length(tri_gram)){
     td<-tri_gram[[i]]
     td1<-tibble::as_tibble(td)
     td2<-dplyr::group_by(td1,value)
