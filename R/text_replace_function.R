@@ -8,6 +8,7 @@ text_replace<-function(DATA){
   
   abstract_data<-tolower(DATA)
   
+  abstract_data<-stringr::str_replace_all(abstract_data, "edinburgh napier university", "edinburghnapieruniversity")
   abstract_data<-stringr::str_replace_all(abstract_data, "organisation", "organization")
   abstract_data<-stringr::str_replace_all(abstract_data, "internationalisation", "internationalization")
   abstract_data<-stringr::str_replace_all(abstract_data, "visualis", "visualiz")
