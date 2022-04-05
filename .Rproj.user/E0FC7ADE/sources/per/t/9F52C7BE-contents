@@ -7,7 +7,9 @@
 text_replace<-function(DATA){
   
   abstract_data<-tolower(DATA)
-  
+ 
+  abstract_data<-stringr::str_replace_all(abstract_data, "edinburgh napier university", "edinburghnapieruniversity")
+  abstract_data<-stringr::str_replace_all(abstract_data, "sri lanka", "srilanka")
   abstract_data<-stringr::str_replace_all(abstract_data, "organisation", "organization")
   abstract_data<-stringr::str_replace_all(abstract_data, "internationalisation", "internationalization")
   abstract_data<-stringr::str_replace_all(abstract_data, "visualis", "visualiz")
@@ -1135,6 +1137,75 @@ text_replace<-function(DATA){
   abstract_data<-stringr::str_replace_all(abstract_data, "social network analysis","socialnetworkanalysis")
   abstract_data<-stringr::str_replace_all(abstract_data, "\\bsna\\b","socialnetworkanalysis")
   abstract_data<-stringr::str_replace_all(abstract_data, "network science","networkscience")
+  abstract_data<-stringr::str_replace_all(abstract_data, "credit rating","creditrating")
+  
+  #
+  abstract_data<-stringr::str_replace_all(abstract_data, "co creation","cocreation")
+  abstract_data<-stringr::str_replace_all(abstract_data, "visitor attractions","visitorattractions")
+  abstract_data<-stringr::str_replace_all(abstract_data, "talent management","talentmanagement")
+  abstract_data<-stringr::str_replace_all(abstract_data, "edinburgh festival","edinburghfestival")
+  abstract_data<-stringr::str_replace_all(abstract_data, "edinburghfestivals","edinburghfestival")
+  abstract_data<-stringr::str_replace_all(abstract_data, "job satisfaction","jobsatisfaction")
+  abstract_data<-stringr::str_replace_all(abstract_data, "islamic finance","islamicfinance")
+  
+  abstract_data<-stringr::str_replace_all(abstract_data, "social care","socialcare")
+  
+  abstract_data<-stringr::str_replace_all(abstract_data, "start ups","startups")
+  
+  abstract_data<-stringr::str_replace_all(abstract_data, "academic literature","")
+  abstract_data<-stringr::str_replace_all(abstract_data, "bibliometric analysis","bibliometricanalysis")
+  abstract_data<-stringr::str_replace_all(abstract_data, "common language","commonlanguage")
+  abstract_data<-stringr::str_replace_all(abstract_data, "consumer behaviour","consumerbehaviour")
+  abstract_data<-stringr::str_replace_all(abstract_data, "content analysis","contentanalysis")
+  abstract_data<-stringr::str_replace_all(abstract_data, "craft beer","craftbeer")
+  abstract_data<-stringr::str_replace_all(abstract_data, "dark tourism","darktourism")
+  abstract_data<-stringr::str_replace_all(abstract_data, "discourse analysis","discourseanalysis")
+  abstract_data<-stringr::str_replace_all(abstract_data, "edinburgh castle","edinburghcastle")
+  abstract_data<-stringr::str_replace_all(abstract_data, "employee engagement","employeeengagement")
+  abstract_data<-stringr::str_replace_all(abstract_data, "event management","eventmanagement")
+  abstract_data<-stringr::str_replace_all(abstract_data, "expert interviews","expertinterviews")
+  abstract_data<-stringr::str_replace_all(abstract_data, "factor analysis","factoranalysis")
+  abstract_data<-stringr::str_replace_all(abstract_data, "feng shui","fengshui")
+  abstract_data<-stringr::str_replace_all(abstract_data, "financial services","financialservices")
+  abstract_data<-stringr::str_replace_all(abstract_data, "fringe festival","fringefestival")
+  abstract_data<-stringr::str_replace_all(abstract_data, "gap literature","")
+  abstract_data<-stringr::str_replace_all(abstract_data, "hospitality sector","hospitalitysector")
+  abstract_data<-stringr::str_replace_all(abstract_data, "industrial action","industrialaction")
+  abstract_data<-stringr::str_replace_all(abstract_data, "life insurance","lifeinsurance")
+  abstract_data<-stringr::str_replace_all(abstract_data, "line managers","linemanagers")
+  abstract_data<-stringr::str_replace_all(abstract_data, "lived experiences","livedexperiences")
+  abstract_data<-stringr::str_replace_all(abstract_data, "luxury brands","luxurybrands")
+  abstract_data<-stringr::str_replace_all(abstract_data, "management practices","managementpractices")
+  abstract_data<-stringr::str_replace_all(abstract_data, "non traditional","nontraditional")
+  abstract_data<-stringr::str_replace_all(abstract_data, "northern ireland","northernireland")
+  abstract_data<-stringr::str_replace_all(abstract_data, "public policy","publicpolicy")
+  abstract_data<-stringr::str_replace_all(abstract_data, "public private","publicprivate")
+  abstract_data<-stringr::str_replace_all(abstract_data, "qualitative interviews","qualitativeinterviews")
+  abstract_data<-stringr::str_replace_all(abstract_data, "review literature","reviewliterature")
+  abstract_data<-stringr::str_replace_all(abstract_data, "savings investments","savingsinvestments")
+  abstract_data<-stringr::str_replace_all(abstract_data, "smart specialisation","smartspecialisation")
+  abstract_data<-stringr::str_replace_all(abstract_data, "social enterprise","socialenterprise")
+  abstract_data<-stringr::str_replace_all(abstract_data, "sport event","sportevent")
+  abstract_data<-stringr::str_replace_all(abstract_data, "state owned","stateowned")
+  abstract_data<-stringr::str_replace_all(abstract_data, "stock market","stockmarket")
+  abstract_data<-stringr::str_replace_all(abstract_data, "stock returns","stockreturns")
+  abstract_data<-stringr::str_replace_all(abstract_data, "strategic talent","strategictalent")
+  abstract_data<-stringr::str_replace_all(abstract_data, "student experience","studentexperience")
+  abstract_data<-stringr::str_replace_all(abstract_data, "studentexperiences","studentexperience")
+  abstract_data<-stringr::str_replace_all(abstract_data, "thematic analysis","thematicanalysis")
+  abstract_data<-stringr::str_replace_all(abstract_data, "trade union","tradeunion")
+  abstract_data<-stringr::str_replace_all(abstract_data, "tradeunions","tradeunion")
+  abstract_data<-stringr::str_replace_all(abstract_data, "transfer knowledge","knowledgetransfer")
+  abstract_data<-stringr::str_replace_all(abstract_data, "visitor attraction","visitorattraction")
+  abstract_data<-stringr::str_replace_all(abstract_data, "visitorattractions","visitorattraction")
+  abstract_data<-stringr::str_replace_all(abstract_data, "voluntary sector","voluntarysector")
+  abstract_data<-stringr::str_replace_all(abstract_data, "world heritage","worldheritage")
+  
+  abstract_data<-stringr::str_replace_all(abstract_data, "human resource development","humanresourcedevelopment")
+  #
+  abstract_data<-stringr::str_replace_all(abstract_data, "https doi org","")
+  
+  abstract_data<-stringr::str_replace_all(abstract_data, "human resourcemanagement hrm","humanresourcemanagement")
   
   DATA2<-abstract_data
 
